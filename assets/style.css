@@ -66,3 +66,24 @@
 .shopping__result-total {
   font-size: 20px;
 }
+
+/*Обертка для формы из задания со звездочкой*/
+.practice-star__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.practice-star__number,
+.practice-star__null {
+  width: 20rem;
+  margin-bottom: 20px;
+}
+
+.practice-star__btn {
+  margin-top: 20px;
+  padding: 5px;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  width: 21rem;
+}

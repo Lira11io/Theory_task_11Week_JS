@@ -37,3 +37,22 @@ total.textContent = sum;
 function resultTotal() {
   total.textContent = sum - (sum * 20) / 100;
 }
+
+/*Практическое задание со звездочкой*/
+/*Решение с помощью JS для импута, где можно вводить только числа*/
+document.querySelector("#text-number2").addEventListener("keyup", function () {
+  this.value = this.value.replace(/[^\d]/g, "");
+});
+
+/*Решение с помощью JS для импута, где ничего вводить нельзя*/
+document.querySelector("#text-null2").addEventListener("keyup", function () {
+  this.value = this.value.replace(/[^d A - Za - zА - Яа - яЁё]/g, "");
+});
+
+/*Функция, вычисляющая значение при нажатии на кнопку*/
+const inpBut = document.querySelector("#text-number2");
+const inpBut2 = document.querySelector("#text-null2");
+function getExpo() {
+  let data = inpBut.value;
+  inpBut2.value = data ** 2;
+}

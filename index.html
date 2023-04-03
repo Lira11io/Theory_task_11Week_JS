@@ -151,6 +151,25 @@
           </div>
         </div>
       </section>
+
+      <section class="practice-star">
+        <h2>Задание со *</h2>
+        <div class="practice-star__form">
+          <!-- Пример инпута, где можно ввести только числа. Решение при помощи средств HTML-->
+          <label for="text-number">Введите число</label>
+          <input class="practice-star__number" type="text" id="text-number" pattern="^[0-9]+$">
+          <!-- Пример инпута, где можно ввести только числа. Решение при помощи средств JavaScript-->
+          <label for="text-number2">Снова введите число</label>
+          <input class="practice-star__number" type="text" id="text-number2" >
+          <!-- Пример инпута, где ничего вводить нельзя. Решение при помощи средств HTML -->
+          <label for="text-null">А тут ничего вводить нельзя</label>
+          <input class="practice-star__null" type="text" id="text-null" readonly>
+          <!-- Пример инпута, где ничего вводить нельзя. Решение при помощи средств JavaScript -->
+          <label for="text-null2">А тут снова ничего вводить нельзя</label>
+          <input class="practice-star__null" type="text" id="text-null2">
+          <button class="practice-star__btn" onclick="getExpo()">Нажми для вычисления</button>
+        </div>
+      </section>
     </div>
     <script src="index.js"></script>
   </body>
